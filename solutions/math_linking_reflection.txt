@@ -1,0 +1,4 @@
+1. Der Schalter -lm ist notwendig, weil Funktionen wie sqrt() nicht in der Standard-C-Bibliothek enthalten sind, sondern in der separaten Mathematikbibliothek "libm". Der Compiler benötigt diesen Linker-Schalter, um sie zu finden.
+
+2. Wenn man -lm weglässt, erhält man beim Kompilieren einen "undefined reference" Fehler, weil der Linker die Definition von sqrt nicht kennt. Das Programm lässt sich dann nicht bauen.
+
