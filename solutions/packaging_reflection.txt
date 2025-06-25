@@ -1,0 +1,4 @@
+1. Mit ar rcs ... wird aus einer oder mehreren .o-Dateien ein Archiv (statische Bibliothek) erstellt. Der Linker findet -lutil, weil er in /usr/local/lib nach libutil.a sucht.
+
+2. ldconfig aktualisiert den internen Bibliotheks-Cache. Damit erkennt der Linker neue oder veränderte Libraries in /usr/local/lib und anderen Systempfaden.
+
