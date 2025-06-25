@@ -1,0 +1,11 @@
+1. Vorteile:
+   - Einfach zu verwenden, keine separate .c Datei nötig
+   - Alles in einer Datei, leichter zu verteilen
+   Nachteile:
+   - Jede .c-Datei, die den Header einbindet, erzeugt eine Kopie der Funktion → kann Binärgröße erhöhen
+
+2. static inline:
+   - static = Sichtbarkeit bleibt auf die jeweilige Datei beschränkt → keine Linker-Konflikte
+   - inline = Compiler kann die Funktion direkt "einbauen", spart Funktionsaufruf-Overhead
+   - Insgesamt kann es die Codegröße erhöhen, wenn viele Kopien erzeugt werden
+
