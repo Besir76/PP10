@@ -1,0 +1,4 @@
+1. Man muss util.o angeben, weil die Funktion clamp dort implementiert ist. Der Header alleine enthält nur die Deklaration, aber keinen ausführbaren Code.
+
+2. Beim Kompilieren prüft der Compiler nur, ob Funktionen deklariert sind (Syntax, Typen). Die tatsächliche Verknüpfung mit dem Code passiert erst beim Linken – dort müssen die Funktionsdefinitionen vorhanden sein, also z. B. in util.o.
+
