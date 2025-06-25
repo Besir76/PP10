@@ -1,0 +1,4 @@
+1. Das Paket libjansson-dev installiert die Header-Datei jansson.h nach /usr/include und die Bibliothek libjansson.a bzw. libjansson.so nach /usr/lib oder /usr/lib/x86_64-linux-gnu.
+
+2. Der Linker findet -ljansson, weil /usr/lib (bzw. /usr/lib/x86_64-linux-gnu) ein Standardpfad ist. ldconfig sorgt dafür, dass dynamische Libraries automatisch gefunden werden.
+
