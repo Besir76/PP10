@@ -1,0 +1,7 @@
+1. Der typedef struct {...} Point; erlaubt es, den Datentyp einfach mit "Point" zu verwenden, anstatt jedes Mal "struct Point" schreiben zu müssen. Es spart Schreibaufwand und sieht sauberer aus.
+
+2. Der Compiler legt die Struktur Point im Speicher nacheinander ab:
+   - Zuerst das double x (8 Byte)
+   - Dann das double y (8 Byte)
+   → Insgesamt 16 Byte, meistens ohne Padding, da beide Felder denselben Typ haben.
+
